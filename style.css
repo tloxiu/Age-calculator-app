@@ -222,7 +222,7 @@ span{
 
   input{
     min-width: 10rem;
-    padding: 1.2rem 1rem;
+    padding: 1rem 1rem;
     font-size: 1.7rem;
   }    
 
@@ -246,7 +246,7 @@ span{
     top: 50%;
     left: 89%;
     transform: translateY(-50%);
-    padding: 1rem;
+    padding: 1.2rem;
   }
 
   h1{
