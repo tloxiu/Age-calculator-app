@@ -368,7 +368,7 @@ span{
   .icon{
     position: absolute;
     top: 50%;
-    left: 89%;
+    left: 90%;
     transform: translateY(-50%);
     padding: 1.2rem;
   }
