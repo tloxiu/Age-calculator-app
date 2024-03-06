@@ -207,6 +207,7 @@ span{
 @media screen and (min-width: 1440px){
 
   .card{
+    padding: 3rem;
     min-width: 45rem;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
