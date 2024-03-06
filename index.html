@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+
+  <main class="wrapper" role="main">
+    <div class="card">
+
+      <form>
+        <div>
+          <p class="input-title title-day-title">day</p>
+          <label for="input-date" class="sr-only">Enter day:</label>
+          <input class="input-date" type="text" id="input-date" placeholder="dd" aria-labelledby="input-date-label">
+          <div class="error-container"><p class="error-date"></p></div>
+        </div>
+        <div>
+          <p class="input-title title-month-title">month</p>
+          <label for="input-month" class="sr-only">Enter month:</label>
+          <input class="input-month" type="text" id="input-month" placeholder="mm" aria-labelledby="input-month-label">
+          <div class="error-container"><p class="error-month"></p></div>
+        </div>
+        <div>
+          <p class="input-title title-year-title">year</p>
+          <label for="input-year" class="sr-only">Enter year:</label>
+          <input class="input-year" type="text" id="input-year" placeholder="yy" aria-labelledby="input-year-label">
+          <div class="error-container"><p class="error-year"></p></div>
+        </div>
+      </form>
+
+      <section class="divider-section">
+        <hr>
+        <button class="icon submit-btn" aria-label="Calculate">
+          <img class="icon-img" src="assets/icon-arrow.svg" alt="">
+        </button>
+      </section>
+
+
+      <section class="result-section" aria-labelledby="Results-heading">
+        <h1><span class="years" aria-live="assertive">--</span> years</h1>
+        <h1><span class="month" aria-live="assertive">--</span> months</h1>
+        <h1><span class="day" aria-live="assertive">--</span> days</h1>
+      </section>
+    </div>
+  </main>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
