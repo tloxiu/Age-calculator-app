@@ -160,6 +160,7 @@ input::placeholder{
 
 .divider{
   height: 2px; background: var(--Light-grey);
+  position: relative;
 }
 
 .icon{
@@ -173,7 +174,8 @@ input::placeholder{
   outline: none;
   border-radius: 50px;
   padding: 1.2rem;
-  max-width: 65px;
+  width: 65px;
+  height: 65px;
   transition: 0.3s;
 }
 
@@ -229,12 +231,18 @@ span{
     font-size: 0.7rem;
   }
 
+  .divider{
+    position: relative;
+  }
+
   .icon{
     position: absolute;
     top: 50%;
-    left: 90%;
-    transform: translateY(-50%);
+    left: 95%;
+    transform: translate(-50%, -50%);
     padding: 1.2rem;
+    width: 68px;
+    height: 68px;
   }
 
   h1{
