@@ -12,45 +12,56 @@
 </head>
 <body>
 
-  <main class="wrapper" role="main">
+  <main class="wrapper">
     <div class="card">
 
       <form>
-        <div>
-          <p class="input-title title-day-title">day</p>
-          <label for="input-date" class="sr-only">Enter day:</label>
-          <input class="input-date" type="text" id="input-date" placeholder="dd" aria-labelledby="input-date-label">
-          <div class="error-container"><p class="error-date"></p></div>
-        </div>
-        <div>
-          <p class="input-title title-month-title">month</p>
-          <label for="input-month" class="sr-only">Enter month:</label>
-          <input class="input-month" type="text" id="input-month" placeholder="mm" aria-labelledby="input-month-label">
-          <div class="error-container"><p class="error-month"></p></div>
-        </div>
-        <div>
-          <p class="input-title title-year-title">year</p>
-          <label for="input-year" class="sr-only">Enter year:</label>
-          <input class="input-year" type="text" id="input-year" placeholder="yyyy" aria-labelledby="input-year-label">
-          <div class="error-container"><p class="error-year"></p></div>
+        <div class="flex-row-fieldsets">
+        <fieldset>
+          <div class="input-label-wrapper">
+            <label for="input-date" class="title-day">day</label>
+            <input class="input-date" type="text" id="input-date" placeholder="dd">
+            <div class="error-container"><p class="error-date"></p></div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="input-label-wrapper">
+            <label for="input-month" class="title-month">month</label>
+            <input class="input-month" type="text" id="input-month" placeholder="mm">
+            <div class="error-container"><p class="error-month"></p></div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="input-label-wrapper">
+            <label for="input-year" class="title-year">year</label>
+            <input class="input-year" type="text" id="input-year" placeholder="yy">
+            <div class="error-container"><p class="error-year"></p></div>
+          </div>
+        </fieldset>
+      </div>
+
+        <div class="divider-section">
+          <div class="divider"></div>
+          <button class="icon submit-btn" aria-label="Calculate">
+            <img class="icon-img" src="assets/icon-arrow.svg" alt="">
+          </button>
         </div>
       </form>
 
-      <section class="divider-section">
-        <hr>
-        <button class="icon submit-btn" aria-label="Calculate">
-          <img class="icon-img" src="assets/icon-arrow.svg" alt="">
-        </button>
-      </section>
 
-
-      <section class="result-section" aria-labelledby="Results-heading">
-        <h1><span class="years" aria-live="assertive">--</span> years</h1>
-        <h1><span class="month" aria-live="assertive">--</span> months</h1>
-        <h1><span class="day" aria-live="assertive">--</span> days</h1>
+      <section class="result-section">
+        <h1>
+          <span class="years" aria-live="assertive">--</span>years <br>
+          <span class="month" aria-live="assertive">--</span> months <br>
+          <span class="day" aria-live="assertive">--</span> days
+        </h1>
       </section>
     </div>
   </main>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
 
   <script type="module" src="script.js"></script>
 </body>
